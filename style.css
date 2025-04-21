@@ -1,0 +1,258 @@
+@font-face {
+    font-family: semibold;
+    src: url(./Gilroy-SemiBold.ttf);
+}
+@font-face {
+    font-family: bold;
+    src: url(./Gilroy-Bold.ttf);
+}
+@font-face {
+    font-family: extrabold;
+    src: url(./Gilroy-ExtraBold.ttf);
+}
+@font-face {
+    font-family: medium;
+    src: url(./Gilroy-Medium.ttf);
+}
+@font-face {
+    font-family: gilroy;
+    src: url(./gilroy.zip);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: gilroy;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+body{
+    overflow-x: hidden;
+}
+#login-page{
+    position: absolute;
+    width: 30%;
+    height: 100vh;
+    background-color: #fff;
+    right: -30%;
+    z-index: 999;
+    padding: 40px 20px;
+    transition: all ease 1s;
+}
+#login-page h4 span{
+    color: #FF5200;
+}
+#login-page i{
+    position: absolute;
+    right: 0;
+    font-size: 4vw;
+}
+#page1{
+    width: 100%;
+    height: 120vh;
+    background-color: #FF5200;
+    position: relative;
+}
+#nav{
+    display: flex;
+    align-items: center;
+    padding: 40px 140px;
+}
+#left-nav img{
+  height: 90%;
+  width: 35%;
+  object-fit: cover;
+}
+#right-nav{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    color: #fff;
+    padding-left: 57px;
+}
+#right-nav h3{
+    font-family: extrabold;
+    font-size: 1rem;
+}
+#right-nav #btn1{
+    padding: 17px 20px;
+    border: 1px solid #fff;
+    background-color: transparent;
+    color: #fff;
+    font-family: extrabold;
+    font-size: 1.2rem;
+    border-radius: 10px;
+}
+#right-nav #btn2{
+    padding: 17px 45px;
+    border: none;
+    background-color: #000;
+    color: #fff;
+    font-family: extrabold;
+    font-size: 1.2rem;
+    border-radius: 10px;
+}
+#img-div1{
+    height: 87%;
+    position: absolute;
+    top: 15%;
+    z-index: 1;  
+}
+#img-div1 img{
+    height: 80%;
+}
+#img2{
+    position: absolute;
+    right: 0;
+    top: 15%;
+    height: 70%;
+    z-index: 1;
+}
+#page1 #hero{
+    width: 90%;
+    height: 80%;
+    position: relative;
+    z-index: 99;
+    left: 5%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 40px;
+}
+#hero #text-div{
+    width: 100%;
+    height: 30%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#text-div h1{
+    color: #fff;
+    width: 70%;
+    font-size: 4vw;
+    font-family: bold;
+}
+#hero #search-div{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+#search-div #input-div1{
+    width: 27%;
+    height: 55%;
+    background-color: #fff;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -30px;
+}
+#search-div #input-div1 input{
+    width: 80%;
+    height: 50%;
+    font-size: 1.5vw;
+} 
+#search-div #input-div2{
+    width: 42%;
+    height: 55%;
+    background-color: #fff;
+    margin-top: -30px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 15px;
+}
+#search-div #input-div2 input{
+    width: 77%;
+    height: 50%;
+    font-size: 1.5vw;
+    border: none;
+}
+#hero #offer-food{
+    width: 100%;
+    height: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 70px;
+}
+#hero #offer-food img{
+    width: 23%;
+    height: 110%;
+    object-fit: co;
+}
+.line{
+    width: 83%;
+    height: 15px;
+    background-color: #fff;
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+#page2{
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}  
+#swipper{
+/* height: 90vh; */
+margin-top: 3vh;
+position: relative;
+width: 90%;
+/* background-color: red; */
+overflow: hidden;
+}
+.swipper-div1{
+    align-items: center;
+    /* height: 50%; */
+    width:300vw;
+    display: flex;
+    gap: 20px;
+    transition: all ease 2s;
+    
+}
+.swipper-div2{
+    align-items: center;
+    display: flex;
+    gap: 20px;
+    /* height: 50%; */
+    width: 300vw;
+    transition: all ease 2s;
+}
+#buttons{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+#prev-btn{
+    font-size: 20px;
+    border-radius: 50%;
+    border: none;
+}
+#next-btn{
+    font-size: 20px;
+    border-radius: 50%;
+    border: none;
+}
+.img-div1{
+    width: 200px;
+    height: 200px;
+    background-color: #fff;
+}
+
+.img-div1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
