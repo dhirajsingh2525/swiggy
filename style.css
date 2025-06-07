@@ -3,6 +3,10 @@
     src: url(./Gilroy-SemiBold.ttf);
 }
 @font-face {
+    font-family: light ;
+    src: url(./Gilroy-Light.ttf);
+}
+@font-face {
     font-family: bold;
     src: url(./Gilroy-Bold.ttf);
 }
@@ -33,21 +37,61 @@ body{
 }
 #login-page{
     position: absolute;
-    width: 30%;
+    width: 35%;
     height: 100vh;
     background-color: #fff;
-    right: -30%;
+    right: -35%;
     z-index: 999;
-    padding: 40px 20px;
+    padding: 120px 50px;
     transition: all ease 1s;
 }
-#login-page h4 span{
+.login1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.login-img img{
+  height: 150px;
+}
+.login1 h4 span{
     color: #FF5200;
+}
+.login1 h4{
+    margin-block: 20px;
+    font-size: 20px;
+}
+.login1 h1{
+    font-size: 40px;
 }
 #login-page i{
     position: absolute;
-    right: 0;
+    top: 5%;
     font-size: 4vw;
+}
+.login-line{
+    width: 20%;
+    height: 1.5px;
+    background-color: black;
+    margin-block: 20px;
+}
+.input-log input{
+    padding: 20px 47px;
+    font-size: 22px;
+    font-weight: 300;
+}
+.input-log  button{
+    padding: 13px 155px;
+    background-color: #FF5200;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 600;
+    border: none;
+    margin-top: 25px;
+}
+.input-log p{
+    font-size: 15px;
+    letter-spacing: none;
+    margin-top: 6px;
 }
 #page1{
     width: 100%;
@@ -76,6 +120,12 @@ body{
 #right-nav h3{
     font-family: extrabold;
     font-size: 1rem;
+}
+#right-nav a{
+    font-family: extrabold;
+    font-size: 1rem;
+    color: #fff;
+    text-decoration: none;
 }
 #right-nav #btn1{
     padding: 17px 20px;
@@ -256,3 +306,562 @@ overflow: hidden;
     height: 100%;
     object-fit: cover;
 }
+#page3{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.swipper-booking-rest{
+    height: 90vh;
+    width: 90%;
+    background-color: #fff;
+    position: relative;
+    padding: 20px;
+    overflow: hidden;
+}
+.button-np{
+    width: 100;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.button-np h2{
+    font-family: extrabold;
+}
+#pre-btn{
+    font-size: 20px;
+    border-radius: 50%;
+    border: none;
+}
+#nex-btn{
+    font-size: 20px;
+    border-radius: 50%;
+    border: none;
+}
+#swipper-img {
+    display: flex;
+    width: 100%; /* This should be based on how many items you have */
+    gap: 20px;
+    transition: transform 0.3s ease-in-out; /* Smooth slide transition */
+}
+
+#contain {
+    width: 30vw; /* Each slide takes full screen width */
+    height: 80%;
+    flex-shrink: 0; /* Prevent shrinking to fit */
+}
+
+
+.swipper-booking-rest .bokking-card1{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    border:  0.5px solid #c5c2c2;
+    border-radius: 20px;
+    transition: all ease-in-out 1s;
+}
+.bokking-card1 .rest-img{
+    width: 100%;
+    height: 45%;
+    position: relative;
+      overflow: hidden; 
+} 
+.bokking-card1 .rest-img img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.rest-img .rest-img1{
+    width: 100%;
+    height: 20%;
+    background: linear-gradient(to top,#000, transparent);
+      position: absolute; 
+     bottom: 0%; 
+    color: #fff;
+     display: flex; 
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 10px;
+}
+.bokking-card1 .location{
+    width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 10px 10px;
+}
+.location h5 {
+    font-family: gilroy;
+    color: #777;
+    font-size: 1rem;
+}
+.bokking-card1 .location1{
+    width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 0px 10px;
+   margin-block: -5px;
+}
+.location1 h5 {
+    font-family: gilroy;
+    color: #777;
+    font-size: 1rem;
+}
+.bokking-card1 .location2{
+    width: 100%;
+   display: flex;
+   justify-content: flex-start;
+   padding: 10px 15px;
+}
+.location2 button {
+ padding: 5px 15px;
+ background-color: #dfdfdf;
+ border: none;
+ border-radius: 20px;
+ font-family: gilroy;
+ color: #777;
+ font-size: 15px;
+ margin-block: 15px;
+}
+.booking-offr{
+    width: 98%;
+    height: 45px;
+    background-color: #1BA672;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 20px;
+    color: #fff;
+    border-radius: 15px;
+}
+.booking-offr .img-offerss{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.booking-offr img{
+    height: 30px;
+}
+.booking-offer2{
+    width: 98%;
+    height: 45px;
+    background-color: #C8F9E5;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0px 20px;
+    color: #1BA672;
+    border-radius: 15px;
+    margin-block: 10px;
+    font-weight: 100;
+}
+.booking-offer3{
+    width: 100%;
+    height: 45px;
+    color: blue;
+    display: flex;
+    align-items: center;
+    padding-left: 5px;
+    font-weight: 100;
+}
+#fotter1{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+#fotter1 img{
+     width: 100%; 
+    height: 30%;
+    object-fit: cover;
+}
+#delevered-city{
+    width: 100%;
+     height: 60%;     
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+#delevered-city h1{
+    position: absolute;
+    top: 18%;
+    left: 16%;
+}
+#delevered-city1{
+    width: 70%;
+     height: 70%; 
+     margin-top: 120px;
+    background-color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    padding-top: 0px;
+}
+.city-name{
+    width: 23%;
+    height: 70px;
+    border: 1.5px solid #555;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 10px;
+}
+.city-name h3{
+    width: 85%;
+    color: #666;
+}
+.city-name h3 span{
+    margin-left: 37px;
+}
+#show-del{
+    width: 100%;
+    height: 50%;
+    display: none;
+    position: absolute;
+    top: 88%;
+}
+#delevered-city2{
+    width: 70%;
+     height: 100%; 
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    margin-left: 207px;
+}
+.city-name1{
+    width: 23%;
+    height: 70px;
+    border: 1.5px solid #555;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 10px;
+}
+.city-name1 h3{
+    width: 85%;
+}
+.city-name1 h3 span{
+    margin-left: 37px;
+}
+#show{
+    cursor: pointer;
+}
+#fotter2{
+    width: 100%;
+    height: 70vh;
+    position: relative;
+}
+#fotter2 h1{
+   position: absolute;
+   top: 12%;
+   left: 16%;
+}
+#footer3{
+    width: 100%;
+    height: 120vh;
+   background-color: #F0F0F5;
+   display: flex;
+  align-items: center;
+  flex-direction: column;
+   /* justify-content: center;  */
+  padding-bottom: 40px;
+  position: relative;
+}
+#footer3 #about{
+    width: 70%;
+    height: 70%;
+    display: flex;
+    gap: 30px;
+    margin-top: 50px;
+}
+#swiggy-logo{
+    width: 20%;
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+}
+#swiggy-logo img{
+  width: 200px;
+}
+#swiggy-logo h3{
+    font-size: 17px;
+    color: #666;
+    font-family: light;
+}
+.about1{
+    /* width: 17%; */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 46px;
+}
+.about1 h3{
+    font-size: 17px;
+    color: #666;
+    font-weight: 600;
+    font-family: light;
+}
+.about1 h2{
+    font-family: medium;
+    font-size: 20px;
+    font-weight: 600;
+}
+.about2{
+    /* width: 17%; */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#about2one h3{
+    color: #666;
+    font-size: 17px;
+    font-weight: 600;
+    font-family: light;
+}
+.about2 #about2one{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+#about2one h2{
+    font-family: medium;
+    font-size: 20px;
+    font-weight: 600;
+}
+.about2 #about2two{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.about2 #about2two h3{
+    color: #666;
+    font-weight: 600;
+    font-size: 17px;
+    font-family: light;
+}
+#about2two h2{
+    font-family: medium;
+    font-size: 20px;
+    font-weight: 600;
+}
+.about3{
+    /* width: 17%; */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.about3 h3{
+    color: #666;
+    font-weight: 600;
+    font-family: light;
+    font-size: 17px;
+}
+.about3 h2{
+    font-family: medium;
+    font-size: 20px;
+    font-weight: 600;
+}
+.about4{
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 160px;
+}
+#about4one{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+#about4one h3{
+    color: #666;
+    font-weight: 600;
+    font-family: light;
+    font-size: 17px;
+}
+#about4one h2{
+    font-family: medium;
+    font-size: 20px;
+    font-weight: 600;
+}
+#about4two #links{
+    display: flex;
+    gap: 10px;
+    font-size: 19px;
+}
+#about4two h2{
+    font-family: medium;
+    font-size: 20px;
+    font-weight: 600;
+}
+#downloadswiggy{
+    width: 100%;
+    height: 18%;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: gilroy;
+    gap: 15px;
+    border-top: 1px solid #666;
+}
+#downloadswiggy h2{
+    font-size: 30px;
+    font-weight: 900;
+}
+@media all and  (max-width: 600px) {
+    #page1{
+        height: 35vh;
+    }
+    #nav{
+        padding: 15px 30px;
+    }
+    #left-nav img{
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+    #right-nav{
+        width: 30%;
+        height: 20%;
+        gap: 10px;
+        margin-right: 170px;
+        white-space: nowrap;
+    }
+    #right-nav h3{
+        font-size: 6px;
+    }
+    #right-nav a{
+        font-size: 6px;
+    }
+    #right-nav #btn1{
+        padding: 7px 17px;
+        font-size: 6px;
+    }
+    #right-nav #btn2{
+        padding: 7px 7px;
+        font-size: 6px;
+    }
+    
+#img-div1{
+    height: 80%; 
+}
+#img-div1 img{
+    height: 80%;
+}
+#img2{
+    height: 80%;
+}
+#page1 #hero{
+    width: 90%;
+    height: 80%;
+    position: relative;
+    z-index: 99;
+    left: 5%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 10px;
+}
+#hero #text-div{
+    width: 100%;
+    height: 30%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#text-div h1{
+    color: #fff;
+    width: 70%;
+    font-size: 4vw;
+    font-family: bold;
+}
+#hero #search-div{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0px;
+}
+#search-div #input-div1{
+    width: 30%;
+    height: 65%;
+}
+#search-div #input-div1 input{
+    width: 90%;
+    height: 50%;
+    font-size: 2vw;
+} 
+#input-div1 h2{
+    font-size: 10px;
+}
+#input-div1 h3{
+    font-size: 10px;
+}
+#search-div #input-div2{
+    width: 35%;
+    height: 55%;
+}
+#input-div2 i{
+    font-size: 10px;
+    text-align: right;
+}
+#search-div #input-div2 input{
+    width: 90%;
+    height: 70%;
+    font-size: 2.2vw;
+}
+#hero #offer-food{
+    padding: 5px 30px;
+}
+#hero #offer-food img{
+    width: 20%;
+}
+.line{
+    width: 83%;
+    height: 10px;
+    margin-top: -3px;
+    display: flex;
+    align-items: center;
+}
+
+#page2{
+    height: 50vh;
+}  
+#swipper{
+margin-top: 0vh;
+}
+.swipper-div1{
+    gap: 2px;  
+}
+.swipper-div2{
+    gap: 2px;
+}
+.img-div1{
+    width: 80px;
+    height: 80px;
+    background-color: #fff;
+}
+}
+
